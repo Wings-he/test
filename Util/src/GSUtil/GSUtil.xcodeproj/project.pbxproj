@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		530C18C32047FAF4006FAB99 /* libGSFoundation.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 530C18C22047FAF3006FAB99 /* libGSFoundation.a */; };
+		539F2E6520076CD600F42E3F /* GSMD5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E5820076CD600F42E3F /* GSMD5.cpp */; };
+		539F2E6620076CD600F42E3F /* GSBase64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E5920076CD600F42E3F /* GSBase64.cpp */; };
+		539F2E6720076CD600F42E3F /* GSTempString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E5A20076CD600F42E3F /* GSTempString.cpp */; };
+		539F2E6820076CD600F42E3F /* xmlParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E5B20076CD600F42E3F /* xmlParser.cpp */; };
+		539F2E6920076CD600F42E3F /* GSIni.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E5C20076CD600F42E3F /* GSIni.cpp */; };
+		539F2E6A20076CD600F42E3F /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E5D20076CD600F42E3F /* tinystr.cpp */; };
+		539F2E6B20076CD600F42E3F /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E5E20076CD600F42E3F /* tinyxmlerror.cpp */; };
+		539F2E6C20076CD600F42E3F /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E5F20076CD600F42E3F /* tinyxml.cpp */; };
+		539F2E6D20076CD600F42E3F /* GSAES.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E6020076CD600F42E3F /* GSAES.cpp */; };
+		539F2E6E20076CD600F42E3F /* cJSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E6120076CD600F42E3F /* cJSON.cpp */; };
+		539F2E6F20076CD600F42E3F /* mdump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E6220076CD600F42E3F /* mdump.cpp */; };
+		539F2E7020076CD600F42E3F /* GSWatchDog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E6320076CD600F42E3F /* GSWatchDog.cpp */; };
+		539F2E7120076CD600F42E3F /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539F2E6420076CD600F42E3F /* tinyxmlparser.cpp */; };
+		539F2EA8200852AF00F42E3F /* GSBase64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2E9A200852AE00F42E3F /* GSBase64.h */; };
+		539F2EA9200852AF00F42E3F /* GSTempString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2E9B200852AE00F42E3F /* GSTempString.h */; };
+		539F2EAA200852AF00F42E3F /* CommonXml.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2E9C200852AE00F42E3F /* CommonXml.hpp */; };
+		539F2EAB200852AF00F42E3F /* GSMD5.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2E9D200852AE00F42E3F /* GSMD5.h */; };
+		539F2EAC200852AF00F42E3F /* xmlParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2E9E200852AE00F42E3F /* xmlParser.h */; };
+		539F2EAD200852AF00F42E3F /* GSUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2E9F200852AE00F42E3F /* GSUtil.h */; };
+		539F2EAE200852AF00F42E3F /* cJSON.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2EA0200852AE00F42E3F /* cJSON.h */; };
+		539F2EAF200852AF00F42E3F /* GSIni.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2EA1200852AE00F42E3F /* GSIni.h */; };
+		539F2EB0200852AF00F42E3F /* mdump.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2EA2200852AE00F42E3F /* mdump.h */; };
+		539F2EB1200852AF00F42E3F /* GSUtilDefs.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2EA3200852AF00F42E3F /* GSUtilDefs.h */; };
+		539F2EB2200852AF00F42E3F /* tinystr.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2EA4200852AF00F42E3F /* tinystr.h */; };
+		539F2EB3200852AF00F42E3F /* GSWatchDog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2EA5200852AF00F42E3F /* GSWatchDog.h */; };
+		539F2EB4200852AF00F42E3F /* tinyxml.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2EA6200852AF00F42E3F /* tinyxml.h */; };
+		539F2EB5200852AF00F42E3F /* GSAES.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539F2EA7200852AF00F42E3F /* GSAES.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		539F2E4520076B8F00F42E3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				539F2EA8200852AF00F42E3F /* GSBase64.h in CopyFiles */,
+				539F2EA9200852AF00F42E3F /* GSTempString.h in CopyFiles */,
+				539F2EAA200852AF00F42E3F /* CommonXml.hpp in CopyFiles */,
+				539F2EAB200852AF00F42E3F /* GSMD5.h in CopyFiles */,
+				539F2EAC200852AF00F42E3F /* xmlParser.h in CopyFiles */,
+				539F2EAD200852AF00F42E3F /* GSUtil.h in CopyFiles */,
+				539F2EAE200852AF00F42E3F /* cJSON.h in CopyFiles */,
+				539F2EAF200852AF00F42E3F /* GSIni.h in CopyFiles */,
+				539F2EB0200852AF00F42E3F /* mdump.h in CopyFiles */,
+				539F2EB1200852AF00F42E3F /* GSUtilDefs.h in CopyFiles */,
+				539F2EB2200852AF00F42E3F /* tinystr.h in CopyFiles */,
+				539F2EB3200852AF00F42E3F /* GSWatchDog.h in CopyFiles */,
+				539F2EB4200852AF00F42E3F /* tinyxml.h in CopyFiles */,
+				539F2EB5200852AF00F42E3F /* GSAES.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539F2EB8200854B000F42E3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				530C18C32047FAF4006FAB99 /* libGSFoundation.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		530C18C22047FAF3006FAB99 /* libGSFoundation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGSFoundation.a; path = ../../../Goctcp_lib/Foundation/libGSFoundation.a; sourceTree = SOURCE_ROOT; };
+		539F2E4720076B8F00F42E3F /* libGSUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGSUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		539F2E5820076CD600F42E3F /* GSMD5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GSMD5.cpp; path = ../GSMD5.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E5920076CD600F42E3F /* GSBase64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GSBase64.cpp; path = ../GSBase64.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E5A20076CD600F42E3F /* GSTempString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GSTempString.cpp; path = ../GSTempString.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E5B20076CD600F42E3F /* xmlParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = xmlParser.cpp; path = ../xmlParser.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E5C20076CD600F42E3F /* GSIni.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GSIni.cpp; path = ../GSIni.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E5D20076CD600F42E3F /* tinystr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinystr.cpp; path = ../tinystr.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E5E20076CD600F42E3F /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlerror.cpp; path = ../tinyxmlerror.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E5F20076CD600F42E3F /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml.cpp; path = ../tinyxml.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E6020076CD600F42E3F /* GSAES.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GSAES.cpp; path = ../GSAES.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E6120076CD600F42E3F /* cJSON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cJSON.cpp; path = ../cJSON.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E6220076CD600F42E3F /* mdump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mdump.cpp; path = ../mdump.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E6320076CD600F42E3F /* GSWatchDog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GSWatchDog.cpp; path = ../GSWatchDog.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E6420076CD600F42E3F /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = ../tinyxmlparser.cpp; sourceTree = SOURCE_ROOT; };
+		539F2E9A200852AE00F42E3F /* GSBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSBase64.h; path = ../GSBase64.h; sourceTree = SOURCE_ROOT; };
+		539F2E9B200852AE00F42E3F /* GSTempString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSTempString.h; path = ../GSTempString.h; sourceTree = SOURCE_ROOT; };
+		539F2E9C200852AE00F42E3F /* CommonXml.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CommonXml.hpp; path = ../CommonXml.hpp; sourceTree = SOURCE_ROOT; };
+		539F2E9D200852AE00F42E3F /* GSMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSMD5.h; path = ../GSMD5.h; sourceTree = SOURCE_ROOT; };
+		539F2E9E200852AE00F42E3F /* xmlParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xmlParser.h; path = ../xmlParser.h; sourceTree = SOURCE_ROOT; };
+		539F2E9F200852AE00F42E3F /* GSUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSUtil.h; path = ../GSUtil.h; sourceTree = SOURCE_ROOT; };
+		539F2EA0200852AE00F42E3F /* cJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cJSON.h; path = ../cJSON.h; sourceTree = SOURCE_ROOT; };
+		539F2EA1200852AE00F42E3F /* GSIni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSIni.h; path = ../GSIni.h; sourceTree = SOURCE_ROOT; };
+		539F2EA2200852AE00F42E3F /* mdump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mdump.h; path = ../mdump.h; sourceTree = SOURCE_ROOT; };
+		539F2EA3200852AF00F42E3F /* GSUtilDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSUtilDefs.h; path = ../GSUtilDefs.h; sourceTree = SOURCE_ROOT; };
+		539F2EA4200852AF00F42E3F /* tinystr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tinystr.h; path = ../tinystr.h; sourceTree = SOURCE_ROOT; };
+		539F2EA5200852AF00F42E3F /* GSWatchDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSWatchDog.h; path = ../GSWatchDog.h; sourceTree = SOURCE_ROOT; };
+		539F2EA6200852AF00F42E3F /* tinyxml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tinyxml.h; path = ../tinyxml.h; sourceTree = SOURCE_ROOT; };
+		539F2EA7200852AF00F42E3F /* GSAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSAES.h; path = ../GSAES.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		539F2E4420076B8F00F42E3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		539F2E3E20076B8F00F42E3F = {
+			isa = PBXGroup;
+			children = (
+				530C18C22047FAF3006FAB99 /* libGSFoundation.a */,
+				539F2E5420076C3300F42E3F /* GSUtil */,
+				539F2E4820076B8F00F42E3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		539F2E4820076B8F00F42E3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				539F2E4720076B8F00F42E3F /* libGSUtil.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		539F2E5420076C3300F42E3F /* GSUtil */ = {
+			isa = PBXGroup;
+			children = (
+				539F2E5720076C5300F42E3F /* include */,
+				539F2E5620076C4300F42E3F /* source */,
+				539F2E5520076C3C00F42E3F /* interface */,
+			);
+			name = GSUtil;
+			sourceTree = "<group>";
+		};
+		539F2E5520076C3C00F42E3F /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				539F2EA7200852AF00F42E3F /* GSAES.h */,
+				539F2EA0200852AE00F42E3F /* cJSON.h */,
+				539F2E9C200852AE00F42E3F /* CommonXml.hpp */,
+				539F2E9A200852AE00F42E3F /* GSBase64.h */,
+				539F2EA1200852AE00F42E3F /* GSIni.h */,
+				539F2E9D200852AE00F42E3F /* GSMD5.h */,
+				539F2E9B200852AE00F42E3F /* GSTempString.h */,
+				539F2E9F200852AE00F42E3F /* GSUtil.h */,
+				539F2EA3200852AF00F42E3F /* GSUtilDefs.h */,
+				539F2EA5200852AF00F42E3F /* GSWatchDog.h */,
+				539F2EA2200852AE00F42E3F /* mdump.h */,
+				539F2EA4200852AF00F42E3F /* tinystr.h */,
+				539F2EA6200852AF00F42E3F /* tinyxml.h */,
+				539F2E9E200852AE00F42E3F /* xmlParser.h */,
+			);
+			name = interface;
+			sourceTree = "<group>";
+		};
+		539F2E5620076C4300F42E3F /* source */ = {
+			isa = PBXGroup;
+			children = (
+				539F2E6120076CD600F42E3F /* cJSON.cpp */,
+				539F2E6020076CD600F42E3F /* GSAES.cpp */,
+				539F2E5920076CD600F42E3F /* GSBase64.cpp */,
+				539F2E5C20076CD600F42E3F /* GSIni.cpp */,
+				539F2E5820076CD600F42E3F /* GSMD5.cpp */,
+				539F2E5A20076CD600F42E3F /* GSTempString.cpp */,
+				539F2E6320076CD600F42E3F /* GSWatchDog.cpp */,
+				539F2E6220076CD600F42E3F /* mdump.cpp */,
+				539F2E5D20076CD600F42E3F /* tinystr.cpp */,
+				539F2E5F20076CD600F42E3F /* tinyxml.cpp */,
+				539F2E5E20076CD600F42E3F /* tinyxmlerror.cpp */,
+				539F2E6420076CD600F42E3F /* tinyxmlparser.cpp */,
+				539F2E5B20076CD600F42E3F /* xmlParser.cpp */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		539F2E5720076C5300F42E3F /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		539F2E4620076B8F00F42E3F /* GSUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 539F2E5020076B8F00F42E3F /* Build configuration list for PBXNativeTarget "GSUtil" */;
+			buildPhases = (
+				539F2E4320076B8F00F42E3F /* Sources */,
+				539F2E4420076B8F00F42E3F /* Frameworks */,
+				539F2E4520076B8F00F42E3F /* CopyFiles */,
+				539F2EB8200854B000F42E3F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSUtil;
+			productName = GSUtil;
+			productReference = 539F2E4720076B8F00F42E3F /* libGSUtil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		539F2E3F20076B8F00F42E3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = gosuncn;
+				TargetAttributes = {
+					539F2E4620076B8F00F42E3F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 539F2E4220076B8F00F42E3F /* Build configuration list for PBXProject "GSUtil" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 539F2E3E20076B8F00F42E3F;
+			productRefGroup = 539F2E4820076B8F00F42E3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				539F2E4620076B8F00F42E3F /* GSUtil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		539F2E4320076B8F00F42E3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539F2E6F20076CD600F42E3F /* mdump.cpp in Sources */,
+				539F2E6820076CD600F42E3F /* xmlParser.cpp in Sources */,
+				539F2E7020076CD600F42E3F /* GSWatchDog.cpp in Sources */,
+				539F2E6C20076CD600F42E3F /* tinyxml.cpp in Sources */,
+				539F2E6A20076CD600F42E3F /* tinystr.cpp in Sources */,
+				539F2E6E20076CD600F42E3F /* cJSON.cpp in Sources */,
+				539F2E6620076CD600F42E3F /* GSBase64.cpp in Sources */,
+				539F2E6520076CD600F42E3F /* GSMD5.cpp in Sources */,
+				539F2E7120076CD600F42E3F /* tinyxmlparser.cpp in Sources */,
+				539F2E6920076CD600F42E3F /* GSIni.cpp in Sources */,
+				539F2E6B20076CD600F42E3F /* tinyxmlerror.cpp in Sources */,
+				539F2E6720076CD600F42E3F /* GSTempString.cpp in Sources */,
+				539F2E6D20076CD600F42E3F /* GSAES.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		539F2E4E20076B8F00F42E3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		539F2E4F20076B8F00F42E3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		539F2E5120076B8F00F42E3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../../Goctcp_lib/Util";
+				DEVELOPMENT_TEAM = W7Q3L59QS3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_LINUX,
+					"DEBUG=1",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../ $(SRCROOT)/../../../Goctcp_lib/Foundation $(SRCROOT)/../../../Include";
+			};
+			name = Debug;
+		};
+		539F2E5220076B8F00F42E3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../../Goctcp_lib/Util";
+				DEVELOPMENT_TEAM = W7Q3L59QS3;
+				GCC_PREPROCESSOR_DEFINITIONS = _LINUX;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../ $(SRCROOT)/../../../Goctcp_lib/Foundation $(SRCROOT)/../../../Include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		539F2E4220076B8F00F42E3F /* Build configuration list for PBXProject "GSUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539F2E4E20076B8F00F42E3F /* Debug */,
+				539F2E4F20076B8F00F42E3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		539F2E5020076B8F00F42E3F /* Build configuration list for PBXNativeTarget "GSUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539F2E5120076B8F00F42E3F /* Debug */,
+				539F2E5220076B8F00F42E3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 539F2E3F20076B8F00F42E3F /* Project object */;
+}

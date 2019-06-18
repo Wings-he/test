@@ -1,0 +1,131 @@
+SRCDIR = ./src
+
+LIB_OBJS = $(SRCDIR)/cJSON.o \
+	$(SRCDIR)/GSIni.o \
+	$(SRCDIR)/GSMD5.o \
+	$(SRCDIR)/GSTempString.o \
+	$(SRCDIR)/GSWatchDog.o \
+	$(SRCDIR)/tinystr.o	\
+	$(SRCDIR)/tinyxml.o	\
+	$(SRCDIR)/tinyxmlerror.o	\
+	$(SRCDIR)/xmlParser.o \
+	$(SRCDIR)/tinyxmlparser.o \
+	$(SRCDIR)/mdump.o \
+	$(SRCDIR)/GSBase64.o \
+	$(SRCDIR)/GSAES.o \
+	$(SRCDIR)/AES.o \
+    $(SRCDIR)/StreamEncrypt.o 
+	
+
+LIB_PREX = rkchip631
+
+LIB_NAME = GSUtil
+
+LIB_DIR = ../Lib_arm/$(LIB_PREX)/Util/shared
+LIB_DIR_STATIC = ../Lib_arm/$(LIB_PREX)/Util/static
+
+
+CROSS_CMPLE = /opt/hisi-linux/x86-arm/aarch64_6.3.1_tools/bin/aarch64-linux-gnu-
+CROSS_INC =
+CROSS_LIBS = -L/opt/hisi-linux/x86-arm/aarch64_6.3.1_tools/lib
+
+CC = $(CROSS_CMPLE)gcc
+CPP = $(CROSS_CMPLE)g++
+LD = $(CROSS_CMPLE)g++
+AR = $(CROSS_CMPLE)ar
+AR2 = $(CROSS_CMPLE)ranlib
+
+CFLAGS = -O3 -Wall -D__linux__ -D_LINUX -fPIC
+DEFINES = -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_ISOC9X_SOURCE
+INC = -I./ -I../Include    -I../Lib_arm/$(LIB_PREX)/Foundation/static/
+
+all: sharelib install
+
+sharelib: lib$(LIB_NAME).so lib$(LIB_NAME).a
+
+lib$(LIB_NAME).so: $(LIB_OBJS)
+	$(RM) lib$(LIB_NAME).so
+	$(LD) -shared $(LIB_OBJS) -o $(LIB_DIR)/lib$(LIB_NAME).so -lpthread
+	#add
+	cp -f $(LIB_DIR)/lib$(LIB_NAME).so ./bin
+	cp -f $(SRCDIR)/cJSON.h ./bin
+	cp -f $(SRCDIR)/GSIni.h ./bin
+	cp -f $(SRCDIR)/GSUtilDefs.h ./bin	
+	cp -f $(SRCDIR)/GSMD5.h ./bin	
+	cp -f $(SRCDIR)/GSTempString.h ./bin	
+	cp -f $(SRCDIR)/GSWatchDog.h ./bin
+	cp -f $(SRCDIR)/tinystr.h ./bin	
+	cp -f $(SRCDIR)/tinyxml.h ./bin	
+	cp -f $(SRCDIR)/xmlParser.h ./bin	
+	cp -f $(SRCDIR)/GSUtil.h ./bin
+	cp -f $(SRCDIR)/mdump.h ./bin
+	cp -f $(SRCDIR)/CommonXml.hpp ./bin
+	cp -f $(SRCDIR)/GSBase64.h ./bin
+	cp -f $(SRCDIR)/GSAES.h ./bin
+	cp -f $(SRCDIR)/StreamEncrypt.h ./bin
+
+%.o: %.S
+	$(CC) $(CFLAGS) $(INC) $(DEFINES) -c -o $@ $<
+	
+%.o:%.c
+	$(CC) $(CFLAGS) $(INC) $(DEFINES) -c $< -o $@
+
+%.o:%.cpp
+	$(CPP) $(CFLAGS) $(INC) $(DEFINES) -c $< -o $@
+
+lib$(LIB_NAME).a: $(LIB_OBJS)
+	$(RM) lib$(LIB_NAME).a
+	$(AR) cru $(LIB_DIR_STATIC)/lib$(LIB_NAME).a $(LIB_OBJS) 
+	$(AR2) $(LIB_DIR_STATIC)/lib$(LIB_NAME).a
+
+%.o: %.S
+	$(CC) $(CFLAGS) $(INC) $(DEFINES) -c -o $@ $<
+	
+%.o:%.c
+	$(CC) $(CFLAGS) $(INC) $(DEFINES) -c $< -o $@
+
+%.o:%.cpp
+	$(CPP) $(CFLAGS) $(INC) $(DEFINES) -c $< -o $@
+
+install:
+	cp -f $(SRCDIR)/cJSON.h $(LIB_DIR)
+	cp -f $(SRCDIR)/GSIni.h $(LIB_DIR)
+	cp -f $(SRCDIR)/GSUtilDefs.h $(LIB_DIR)	
+	cp -f $(SRCDIR)/GSMD5.h $(LIB_DIR)	
+	cp -f $(SRCDIR)/GSTempString.h $(LIB_DIR)	
+	cp -f $(SRCDIR)/GSWatchDog.h $(LIB_DIR)	
+	cp -f $(SRCDIR)/tinystr.h $(LIB_DIR)	
+	cp -f $(SRCDIR)/tinyxml.h $(LIB_DIR)	
+	cp -f $(SRCDIR)/xmlParser.h $(LIB_DIR)	
+	cp -f $(SRCDIR)/GSUtil.h $(LIB_DIR)	
+	cp -f $(SRCDIR)/mdump.h $(LIB_DIR)
+	cp -f $(SRCDIR)/CommonXml.hpp $(LIB_DIR)
+	cp -f $(SRCDIR)/GSBase64.h $(LIB_DIR)
+	cp -f $(SRCDIR)/GSAES.h $(LIB_DIR)
+	cp -f $(SRCDIR)/StreamEncrypt.h $(LIB_DIR)
+	
+	
+	cp -f $(SRCDIR)/cJSON.h $(LIB_DIR_STATIC)
+	cp -f $(SRCDIR)/GSIni.h $(LIB_DIR_STATIC)
+	cp -f $(SRCDIR)/GSUtilDefs.h $(LIB_DIR_STATIC)	
+	cp -f $(SRCDIR)/GSMD5.h $(LIB_DIR_STATIC)	
+	cp -f $(SRCDIR)/GSTempString.h $(LIB_DIR_STATIC)	
+	cp -f $(SRCDIR)/GSWatchDog.h $(LIB_DIR_STATIC)	
+	cp -f $(SRCDIR)/tinystr.h $(LIB_DIR_STATIC)	
+	cp -f $(SRCDIR)/tinyxml.h $(LIB_DIR_STATIC)	
+	cp -f $(SRCDIR)/xmlParser.h $(LIB_DIR_STATIC)	
+	cp -f $(SRCDIR)/GSUtil.h $(LIB_DIR_STATIC)	
+	cp -f $(SRCDIR)/mdump.h $(LIB_DIR_STATIC)
+	cp -f $(SRCDIR)/CommonXml.hpp $(LIB_DIR_STATIC)
+	cp -f $(SRCDIR)/GSBase64.h $(LIB_DIR_STATIC)
+	cp -f $(SRCDIR)/GSAES.h $(LIB_DIR_STATIC)
+	cp -f $(SRCDIR)/StreamEncrypt.h $(LIB_DIR_STATIC)
+	
+clean:
+	rm -f $(LIB_OBJS)
+	rm -f $(LIB_DIR)/lib$(LIB_NAME).so
+	rm -f $(LIB_DIR)/*.h*
+	rm -f $(LIB_DIR_STATIC)/lib$(LIB_NAME).a
+	rm -f $(LIB_DIR_STATIC)/*.h*
+rebuild: clean all
+
